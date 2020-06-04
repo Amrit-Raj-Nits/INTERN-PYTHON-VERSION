@@ -438,25 +438,7 @@ def handle_remove(record):
 	
 	#Printing the success message
 	print("Done handling REMOVE Event")
-	
-"""
-As of now, our code does not need an update code as we do not allow manipulation of individual track data from here.
-This might be useful later.
-def handle_modify(record):
-	print("Handling MODIFY Event")
-	#Parse oldImage and score
-	oldImage = record['dynamodb']['OldImage']
-	oldScore = oldImage['attribute_name']['attribute_type']
-	
-	#Parse oldImage and score
-	newImage = record['dynamodb']['NewImage']
-	newScore = newImage['attribute_name']['attribute_type']
-	#Check for change
-	if oldScore != newScore:
-		print('Scores changed - oldScore=' + str(oldScore) + ', newScore=' + str(newScore))
-	print("Done handling MODIFY Event")
-"""
-	
+		
 
 """
 Sample data to test: 
